@@ -1,0 +1,69 @@
+{
+  "name": "tdc-design-system",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@expo/html-elements": "0.12.5",
+    "@expo/metro-runtime": "57.0.16",
+    "@gluestack-ui/core": "5.0.15",
+    "@gluestack-ui/utils": "5.0.6",
+    "@gorhom/bottom-sheet": "5.2.14",
+    "@legendapp/list": "3.3.11",
+    "@legendapp/motion": "2.5.3",
+    "@react-native-community/datetimepicker": "9.1.0",
+    "ai": "7.0.107",
+    "expo": "57.0.24",
+    "expo-document-picker": "57.0.2",
+    "expo-glass-effect": "57.0.3",
+    "expo-image-picker": "57.0.19",
+    "expo-status-bar": "57.0.1",
+    "lucide-react-native": "1.47.0",
+    "nativewind": "5.0.0-rc.0",
+    "react": "19.2.3",
+    "react-aria": "3.52.1",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-css": "3.1.0-rc.0",
+    "react-native-gesture-handler": "2.32.0",
+    "react-native-keyboard-controller": "1.21.9",
+    "react-native-markdown-display": "7.0.2",
+    "react-native-reanimated": "4.5.1",
+    "react-native-safe-area-context": "5.10.0",
+    "react-native-svg": "15.15.5",
+    "react-native-web": "0.21.2",
+    "react-native-worklets": "0.10.1",
+    "react-stately": "3.50.0",
+    "tailwind-variants": "0.1.20"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "10.6.0",
+    "@storybook/addon-themes": "10.6.0",
+    "@storybook/react-native-web-vite": "10.6.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/react": "19.2.18",
+    "babel-plugin-module-resolver": "5.0.3",
+    "babel-preset-expo": "57.0.12",
+    "storybook": "10.6.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "vite": "8.3.0"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "docs:tokens": "node scripts/gen-tokens-doc.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "private": true,
+  "overrides": {
+    "lightningcss": "1.30.1"
+  },
+  "resolutions": {
+    "lightningcss": "1.30.1"
+  }
+}

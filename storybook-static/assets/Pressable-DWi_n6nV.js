@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BcKkbAw3.js";import{r as t,v as n,y as r}from"./dist-wrNzRCnc.js";import{i,n as a,o,r as s,t as c}from"./copyComponentProperties-RQiJnNSO.js";var l,u;function d(){return(d=e((()=>{t(),s(),l={className:`style`},u=c(n,e=>o(n,e,l))})))()}export{d as n,u as t};

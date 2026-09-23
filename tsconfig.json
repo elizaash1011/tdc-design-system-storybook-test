@@ -1,0 +1,18 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "storybook-static",
+    "dist",
+    // Upstream gluestack demo files shipped inside components/ui. They are
+    // reference snippets, not part of the component surface, and they do not
+    // compile (undeclared identifiers, implicit anys). Nothing imports them.
+    "**/USAGE_EXAMPLE.tsx"
+  ]
+}

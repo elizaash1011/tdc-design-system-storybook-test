@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BcKkbAw3.js";import{t}from"./react-DwpFz0gP.js";var n,r;function i(){return(i=e((()=>{n=t(),r=()=>{let[e,t]=(0,n.useState)(!1);return{focusProps:{onFocus:()=>t(!0),onBlur:()=>t(!1)},isFocused:e}}})))()}export{r as n,i as t};

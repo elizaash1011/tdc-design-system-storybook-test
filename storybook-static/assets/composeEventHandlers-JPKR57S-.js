@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BcKkbAw3.js";function t(...e){return function(t){var n;try{for(let r=0;r<e.length;r++)(n=e[r])==null||n.call(e,t)}catch{}}}function n(){return(n=e((()=>{})))()}export{n,t};

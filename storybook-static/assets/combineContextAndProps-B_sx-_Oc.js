@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BcKkbAw3.js";var t;function n(){return(n=e((()=>{t=(e,t)=>Object.assign(Object.assign({},e),t)})))()}export{n,t};

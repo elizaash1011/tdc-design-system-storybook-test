@@ -1,0 +1,85 @@
+import{n as e,r as t,s as n}from"./rolldown-runtime-BcKkbAw3.js";import{t as r}from"./react-DwpFz0gP.js";import{t as i}from"./jsx-runtime-BbDfbRii.js";import{a,o}from"./index.web-D_AoTLeS.js";import{r as s,t as c}from"./withStyleContext-DUZXNZoO.js";import{n as l,t as u}from"./mergeRefs-CMTVHus9.js";import{a as d,i as f,n as p,t as m}from"./useFormControl-BSOlfUfm.js";import{n as h,t as g}from"./combineContextAndProps-B_sx-_Oc.js";import{n as ee,r as te}from"./primitiveIcon-DiBiEr9o.js";import{a as ne,i as re}from"./copyComponentProperties-RQiJnNSO.js";import{n as ie,t as _}from"./Text-DNo9SOuE.js";import{n as ae,t as v}from"./View-C3eIN7TA.js";import{n as y,rt as oe}from"./index.web-CrrZZXjP.js";import{a as se,i as b,n as ce,t as x}from"./helpers-C3hOae0F.js";import{a as le,n as S,t as C}from"./input-jh8ltVFO.js";import{n as ue,r as de,t as fe}from"./textarea-DxCTM5RU.js";var w,pe,T,me;function he(){return(he=e((()=>{w=i(),pe=n(r()),p(),T=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},me=e=>(0,pe.forwardRef)((t,n)=>{var r=T(t,[]);let i=d(r),{htmlProps:a}=i,o=T(i,[`htmlProps`]),{isDisabled:s,isInvalid:c}=o,l=T(o,[`isDisabled`,`isInvalid`]);return(0,w.jsx)(m.Provider,{value:o,children:(0,w.jsx)(e,{ref:n,...l,...a,states:{disabled:s,invalid:c},"data-disabled":s?`true`:`false`,"data-invalid":c?`true`:`false`,dataSet:{disabled:s?`true`:`false`,invalid:c?`true`:`false`}})})})})))()}var ge,E,D,_e;function ve(){return(ve=e((()=>{ge=i(),E=n(r()),h(),p(),D=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},_e=e=>(0,E.forwardRef)((t,n)=>{var{children:r}=t,i=D(t,[`children`]);let a=f(),o=g(a,i),{isInvalid:s}=o,c=D(o,[`isInvalid`]);return E.useEffect(()=>(c?.setHasFeedbackText(!0),()=>{c?.setHasFeedbackText(!1)})),s&&r?(0,ge.jsx)(e,{ref:n,...c,children:r}):null})})))()}var ye,be,xe,Se;function Ce(){return(Ce=e((()=>{ye=i(),be=n(r()),xe=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},Se=e=>(0,be.forwardRef)((t,n)=>{var{children:r}=t,i=xe(t,[`children`]);return(0,ye.jsx)(e,{ref:n,...i,children:r})})})))()}var we,O,k,Te;function Ee(){return(Ee=e((()=>{we=i(),O=n(r()),k=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},Te=e=>(0,O.forwardRef)((t,n)=>{var{children:r}=t,i=k(t,[`children`]);return(0,we.jsx)(e,{ref:n,...i,children:r})})})))()}var De,A,Oe,j;function ke(){return(ke=e((()=>{De=i(),A=n(r()),h(),p(),Oe=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},j=e=>(0,A.forwardRef)((t,n)=>{var{children:r}=t,i=Oe(t,[`children`]);let a=f(),o=g(a,i);return A.useEffect(()=>(o?.setHasHelpText(!0),()=>{o?.setHasHelpText(!1)})),(0,De.jsx)(e,{ref:n,...o,id:o?.labelId,children:r})})})))()}var M,N,P,Ae;function je(){return(je=e((()=>{M=i(),N=n(r()),h(),p(),P=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},Ae=({Label:e,LabelAstrick:t})=>(0,N.forwardRef)((n,r)=>{var{children:i}=n,a=P(n,[`children`]);let o=f(),s=g(o,a),{isRequired:c}=s,u=P(s,[`isRequired`]),d=N.useRef(null),p=l([d,r]);N.useEffect(()=>{d.current&&(a.htmlFor?d.current.htmlFor=a.htmlFor:u?.id&&(d.current.htmlFor=u.id))},[u?.id,a.htmlFor]);let m=a.htmlFor||u?.id,h=N.useCallback(e=>{var t;if((t=a?.onClick)==null||t.call(a,e),!m||typeof document>`u`)return;let n=document.getElementById(m);n instanceof HTMLInputElement&&n.click()},[m,a.onClick]);return(0,M.jsxs)(e,{ref:p,...u,id:u?.labelId,onClick:h,children:[i,c&&(0,M.jsx)(t,{children:`*`})]})})})))()}var Me,Ne,Pe,Fe;function Ie(){return(Ie=e((()=>{Me=i(),Ne=n(r()),Pe=function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols==`function`)for(var i=0,r=Object.getOwnPropertySymbols(e);i<r.length;i++)t.indexOf(r[i])<0&&Object.prototype.propertyIsEnumerable.call(e,r[i])&&(n[r[i]]=e[r[i]]);return n},Fe=e=>(0,Ne.forwardRef)((t,n)=>{var{children:r}=t,i=Pe(t,[`children`]);return(0,Me.jsx)(e,{ref:n,...i,children:r})})})))()}var Le;function F(){return(F=e((()=>{he(),ve(),Ce(),Ee(),ke(),je(),Ie(),p(),Le=({Root:e,Error:t,ErrorText:n,ErrorIcon:r,Label:i,LabelText:a,LabelAstrick:o,Helper:s,HelperText:c})=>{let l=me(e);return l.Error=_e(t),l.Error.Text=Se(n),l.Error.Icon=Te(r),l.Label=Ae({Label:i,LabelAstrick:o}),l.Label.Text=Fe(a),l.Helper=j(s),l.Helper.Text=j(c),l.Error.displayName=`FormControl.Error`,l.Error.Text.displayName=`FormControl.Error.Text`,l.Error.Icon.displayName=`FormControl.Error.Icon`,l.Label.displayName=`FormControl.Label`,l.Label.Text.displayName=`FormControl.Label.Text`,l.Helper.displayName=`FormControl.Helper`,l.Helper.Text.displayName=`FormControl.Helper.Text`,l}})))()}var I,L,Re,ze,Be,Ve,He,Ue,We,Ge,Ke,qe,R,Je,z,B,V,H,U,W,G,K,q;function Ye(){return(Ye=e((()=>{ie(),ae(),I=n(r()),F(),a(),c(),re(),te(),L=i(),Re=`FORM_CONTROL`,ze=o({base:`flex flex-col`}),Be=o({base:`text-destructive fill-none h-[18px] w-[18px]`}),Ve=o({base:`flex flex-row justify-start items-center mt-1 gap-1`}),He=o({base:`text-destructive text-xs font-body`,variants:{isTruncated:{true:`web:truncate`},bold:{true:`font-bold`},underline:{true:`underline`},strikeThrough:{true:`line-through`},sub:{true:`text-xs`},italic:{true:`italic`},highlight:{true:`bg-yellow-500`}}}),Ue=o({base:`flex flex-row justify-start items-center mt-1 font-body`}),We=o({base:`text-foreground/70 font-body text-sm`,variants:{isTruncated:{true:`web:truncate`},bold:{true:`font-bold`},underline:{true:`underline`},strikeThrough:{true:`line-through`},sub:{true:`text-xs`},italic:{true:`italic`},highlight:{true:`bg-yellow-500`}}}),Ge=o({base:`flex flex-row justify-start items-center mb-1`}),Ke=o({base:`font-medium text-foreground text-base font-body`,variants:{isTruncated:{true:`web:truncate`},bold:{true:`font-bold`},underline:{true:`underline`},strikeThrough:{true:`line-through`},sub:{true:`text-xs`},italic:{true:`italic`},highlight:{true:`bg-yellow-500`}}}),qe=o({base:`font-medium text-foreground text-base`,variants:{isTruncated:{true:`web:truncate`},bold:{true:`font-bold`},underline:{true:`underline`},strikeThrough:{true:`line-through`},sub:{true:`text-xs`},italic:{true:`italic`},highlight:{true:`bg-yellow-500`}}}),R=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(_,{ref:n,className:qe({class:e}),...t})}),Je=ne(ee,{className:`style`}),z=Le({Root:s(v,Re),Error:v,ErrorText:_,ErrorIcon:Je,Label:v,LabelText:_,LabelAstrick:R,Helper:v,HelperText:_}),B=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z,{ref:n,className:ze({class:e}),...t})}),V=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Error,{ref:n,className:Ve({class:e}),...t})}),H=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Error.Text,{className:He({class:e}),ref:n,...t})}),U=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Error.Icon,{ref:n,...t,className:Be({class:e})})}),W=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Label,{ref:n,className:Ge({class:e}),...t})}),G=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Label.Text,{className:Ke({class:e}),ref:n,...t})}),K=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Helper,{ref:n,className:Ue({class:e}),...t})}),q=I.forwardRef(function({className:e,...t},n){return(0,L.jsx)(z.Helper.Text,{className:We({class:e}),ref:n,...t})}),B.displayName=`FormControl`,V.displayName=`FormControlError`,H.displayName=`FormControlErrorText`,U.displayName=`FormControlErrorIcon`,W.displayName=`FormControlLabel`,G.displayName=`FormControlLabelText`,R.displayName=`FormControlLabelAstrick`,K.displayName=`FormControlHelper`,q.displayName=`FormControlHelperText`,B.__docgenInfo={description:``,methods:[],displayName:`FormControl`},V.__docgenInfo={description:``,methods:[],displayName:`FormControlError`},H.__docgenInfo={description:``,methods:[],displayName:`FormControlErrorText`},U.__docgenInfo={description:``,methods:[],displayName:`FormControlErrorIcon`},W.__docgenInfo={description:``,methods:[],displayName:`FormControlLabel`,props:{htmlFor:{required:!1,tsType:{name:`string`},description:``},role:{required:!1,tsType:{name:`string`},description:``}}},G.__docgenInfo={description:``,methods:[],displayName:`FormControlLabelText`},R.__docgenInfo={description:``,methods:[],displayName:`FormControlLabelAstrick`},K.__docgenInfo={description:``,methods:[],displayName:`FormControlHelper`},q.__docgenInfo={description:``,methods:[],displayName:`FormControlHelperText`}})))()}var Xe=t({Default:()=>X,Slots:()=>Q,States:()=>Z,WithTextarea:()=>$,__namedExportsOrder:()=>$e,default:()=>Y});function Ze(e){return(0,J.jsxs)(B,{...e,className:`w-full max-w-sm`,children:[(0,J.jsx)(W,{children:(0,J.jsx)(G,{children:`Label`})}),(0,J.jsx)(C,{children:(0,J.jsx)(S,{placeholder:`Placeholder`})}),(0,J.jsx)(K,{children:(0,J.jsx)(q,{children:`Helper text`})}),(0,J.jsxs)(V,{children:[(0,J.jsx)(U,{as:y}),(0,J.jsx)(H,{children:`Error text`})]})]})}var J,Qe,Y,X,Z,Q,$,$e;function et(){return(et=e((()=>{r(),Ye(),oe(),le(),de(),se(),J=i(),Qe=[{label:`default`,props:{}},{label:`isRequired`,props:{isRequired:!0}},{label:`isInvalid`,props:{isInvalid:!0}},{label:`isInvalid + isRequired`,props:{isInvalid:!0,isRequired:!0}},{label:`isDisabled`,props:{isDisabled:!0}},{label:`isReadOnly`,props:{isReadOnly:!0}}],Y={title:`UI/FormControl`,component:B,argTypes:{isInvalid:{control:`boolean`},isRequired:{control:`boolean`},isDisabled:{control:`boolean`},isReadOnly:{control:`boolean`}},args:{isInvalid:!1,isRequired:!1,isDisabled:!1,isReadOnly:!1},render:e=>(0,J.jsx)(Ze,{...e})},X={},Z={render:()=>(0,J.jsxs)(b,{children:[(0,J.jsx)(ce,{children:`FormControlError only mounts while the control is invalid, so the error row is what changes the field's height between these states.`}),Qe.map(e=>(0,J.jsx)(x,{label:e.label,className:`w-full max-w-sm`,children:(0,J.jsx)(Ze,{...e.props})},e.label))]})},Q={render:()=>(0,J.jsxs)(b,{children:[(0,J.jsx)(x,{label:`label only`,className:`w-full max-w-sm`,children:(0,J.jsxs)(B,{className:`w-full max-w-sm`,children:[(0,J.jsx)(W,{children:(0,J.jsx)(G,{children:`Label`})}),(0,J.jsx)(C,{children:(0,J.jsx)(S,{placeholder:`Placeholder`})})]})}),(0,J.jsx)(x,{label:`label + helper`,className:`w-full max-w-sm`,children:(0,J.jsxs)(B,{className:`w-full max-w-sm`,children:[(0,J.jsx)(W,{children:(0,J.jsx)(G,{children:`Label`})}),(0,J.jsx)(C,{children:(0,J.jsx)(S,{placeholder:`Placeholder`})}),(0,J.jsx)(K,{children:(0,J.jsx)(q,{children:`Helper text`})})]})}),(0,J.jsx)(x,{label:`label + error`,className:`w-full max-w-sm`,children:(0,J.jsxs)(B,{isInvalid:!0,className:`w-full max-w-sm`,children:[(0,J.jsx)(W,{children:(0,J.jsx)(G,{children:`Label`})}),(0,J.jsx)(C,{children:(0,J.jsx)(S,{placeholder:`Placeholder`})}),(0,J.jsxs)(V,{children:[(0,J.jsx)(U,{as:y}),(0,J.jsx)(H,{children:`Error text`})]})]})})]})},$={render:()=>(0,J.jsxs)(b,{children:[(0,J.jsx)(ce,{children:`The state props cascade to any gluestack field inside the control, not just Input — here the same wrapper drives a Textarea.`}),(0,J.jsx)(x,{label:`isRequired`,className:`w-full max-w-sm`,children:(0,J.jsxs)(B,{isRequired:!0,className:`w-full max-w-sm`,children:[(0,J.jsx)(W,{children:(0,J.jsx)(G,{children:`Label`})}),(0,J.jsx)(fe,{children:(0,J.jsx)(ue,{placeholder:`Placeholder`})}),(0,J.jsx)(K,{children:(0,J.jsx)(q,{children:`Helper text`})})]})}),(0,J.jsx)(x,{label:`isInvalid`,className:`w-full max-w-sm`,children:(0,J.jsxs)(B,{isInvalid:!0,className:`w-full max-w-sm`,children:[(0,J.jsx)(W,{children:(0,J.jsx)(G,{children:`Label`})}),(0,J.jsx)(fe,{children:(0,J.jsx)(ue,{placeholder:`Placeholder`})}),(0,J.jsxs)(V,{children:[(0,J.jsx)(U,{as:y}),(0,J.jsx)(H,{children:`Error text`})]})]})})]})},$e=[`Default`,`States`,`Slots`,`WithTextarea`],X.parameters={...X.parameters,docs:{...X.parameters?.docs,source:{originalSource:`{}`,...X.parameters?.docs?.source}}},Z.parameters={...Z.parameters,docs:{...Z.parameters?.docs,source:{originalSource:`{
+  render: () => <Showcase>
+      <Note>
+        FormControlError only mounts while the control is invalid, so the error
+        row is what changes the field's height between these states.
+      </Note>
+      {STATES.map(state => <Labeled key={state.label} label={state.label} className="w-full max-w-sm">
+          <FieldExample {...state.props} />
+        </Labeled>)}
+    </Showcase>
+}`,...Z.parameters?.docs?.source}}},Q.parameters={...Q.parameters,docs:{...Q.parameters?.docs,source:{originalSource:`{
+  render: () => <Showcase>
+      <Labeled label="label only" className="w-full max-w-sm">
+        <FormControl className="w-full max-w-sm">
+          <FormControlLabel>
+            <FormControlLabelText>Label</FormControlLabelText>
+          </FormControlLabel>
+          <Input>
+            <InputField placeholder="Placeholder" />
+          </Input>
+        </FormControl>
+      </Labeled>
+      <Labeled label="label + helper" className="w-full max-w-sm">
+        <FormControl className="w-full max-w-sm">
+          <FormControlLabel>
+            <FormControlLabelText>Label</FormControlLabelText>
+          </FormControlLabel>
+          <Input>
+            <InputField placeholder="Placeholder" />
+          </Input>
+          <FormControlHelper>
+            <FormControlHelperText>Helper text</FormControlHelperText>
+          </FormControlHelper>
+        </FormControl>
+      </Labeled>
+      <Labeled label="label + error" className="w-full max-w-sm">
+        <FormControl isInvalid className="w-full max-w-sm">
+          <FormControlLabel>
+            <FormControlLabelText>Label</FormControlLabelText>
+          </FormControlLabel>
+          <Input>
+            <InputField placeholder="Placeholder" />
+          </Input>
+          <FormControlError>
+            <FormControlErrorIcon as={AlertCircleIcon} />
+            <FormControlErrorText>Error text</FormControlErrorText>
+          </FormControlError>
+        </FormControl>
+      </Labeled>
+    </Showcase>
+}`,...Q.parameters?.docs?.source}}},$.parameters={...$.parameters,docs:{...$.parameters?.docs,source:{originalSource:`{
+  render: () => <Showcase>
+      <Note>
+        The state props cascade to any gluestack field inside the control, not
+        just Input — here the same wrapper drives a Textarea.
+      </Note>
+      <Labeled label="isRequired" className="w-full max-w-sm">
+        <FormControl isRequired className="w-full max-w-sm">
+          <FormControlLabel>
+            <FormControlLabelText>Label</FormControlLabelText>
+          </FormControlLabel>
+          <Textarea>
+            <TextareaInput placeholder="Placeholder" />
+          </Textarea>
+          <FormControlHelper>
+            <FormControlHelperText>Helper text</FormControlHelperText>
+          </FormControlHelper>
+        </FormControl>
+      </Labeled>
+      <Labeled label="isInvalid" className="w-full max-w-sm">
+        <FormControl isInvalid className="w-full max-w-sm">
+          <FormControlLabel>
+            <FormControlLabelText>Label</FormControlLabelText>
+          </FormControlLabel>
+          <Textarea>
+            <TextareaInput placeholder="Placeholder" />
+          </Textarea>
+          <FormControlError>
+            <FormControlErrorIcon as={AlertCircleIcon} />
+            <FormControlErrorText>Error text</FormControlErrorText>
+          </FormControlError>
+        </FormControl>
+      </Labeled>
+    </Showcase>
+}`,...$.parameters?.docs?.source}}}})))()}export{et as n,F as r,Xe as t};

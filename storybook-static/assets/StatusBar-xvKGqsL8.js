@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BcKkbAw3.js";function t(){return null}var n,r=e((()=>{n=()=>{},t.setBackgroundColor=n,t.setBarStyle=n,t.setHidden=n,t.setNetworkActivityIndicatorVisible=n,t.setTranslucent=n}));export{r as n,t};

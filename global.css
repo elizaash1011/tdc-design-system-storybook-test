@@ -1,0 +1,242 @@
+/* ============================================================================
+   PLACEHOLDER THEME — gluestack defaults. Replace primary, secondary, and
+   semantic status colors with TDC brand values. Keep variable names unchanged
+   so they match the Figma variable names.
+   ============================================================================
+
+   This is the single source of truth for the design system's theme. Every color
+   a component renders resolves through a variable declared in this file.
+
+   HOW TO READ IT
+   --------------
+   Colors are stored as space-separated sRGB channels ("23 23 23"), not hex.
+   That is a NativeWind requirement: it lets Tailwind wrap a variable in
+   `rgb(var(--primary))` and still apply an opacity modifier such as
+   `bg-primary/60`. Write `239 68 68`, never `#ef4444` or `rgb(239 68 68)`.
+
+   The four blocks below must stay in sync — a token added to one must be added
+   to all four:
+     1. `:root`                            light defaults, all platforms
+     2. `@media (prefers-color-scheme: dark) :root`
+                                           dark defaults; NativeWind maps this
+                                           to Appearance.getColorScheme() on
+                                           native
+     3. `:root.dark`                       explicit dark, wins over the media
+                                           query so an in-app/Storybook toggle
+                                           can override the OS setting
+     4. `:root.light`                      explicit light, same reason
+
+   `@theme inline` at the bottom is what turns a variable into a usable Tailwind
+   utility: `--color-status-paid` there is what makes `bg-status-paid` and
+   `text-status-paid` exist. A variable with no `@theme inline` entry is not
+   reachable from a className.
+
+   HOW TO RETHEME
+   --------------
+   Change the channel values in all four blocks. Do not rename the variables and
+   do not delete any — component classNames reference them by name, and
+   docs/TOKENS.md maps each name to its Figma counterpart.
+
+   See docs/TOKENS.md for the full table and README.md for a worked example.
+   ========================================================================== */
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+@import "nativewind/theme";
+
+@layer theme {
+  :root {
+    --primary: 23 23 23;
+    --primary-foreground: 250 250 250;
+    --card: 255 255 255;
+    --secondary: 245 245 245;
+    --secondary-foreground: 23 23 23;
+    --background: 255 255 255;
+    --popover: 255 255 255;
+    --popover-foreground: 10 10 10;
+    --muted: 245 245 245;
+    --muted-foreground: 115 115 115;
+    --destructive: 231 0 11;
+    --foreground: 10 10 10;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 212 212 212;
+    --accent: 247 247 247;
+    --accent-foreground: 52 52 52;
+
+    /* ── Semantic status tokens (claim / transaction status) ──────────────
+       PLACEHOLDERS: Tailwind default palette at the 500 step. Replace with
+       TDC brand status colors. Each has a -foreground pair for label text
+       placed on top of the status color.
+
+       These five are a TDC addition, not part of stock gluestack. They exist
+       so claim and transaction status is expressed as one named token rather
+       than a raw color picked per screen. */
+
+    /* amber-500 / amber-950 — action required from the member */
+    --status-needs-action: 245 158 11;
+    --status-needs-action-foreground: 69 26 3;
+
+    /* blue-500 / white — received, being adjudicated */
+    --status-in-review: 59 130 246;
+    --status-in-review-foreground: 255 255 255;
+
+    /* green-500 / white — reimbursed or settled */
+    --status-paid: 34 197 94;
+    --status-paid-foreground: 255 255 255;
+
+    /* gray-500 / white — closed, no action left; intentionally low-salience */
+    --status-resolved: 107 114 128;
+    --status-resolved-foreground: 255 255 255;
+
+    /* red-500 / white — claim denied */
+    --status-denied: 239 68 68;
+    --status-denied-foreground: 255 255 255;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: 255 245 245;
+      --primary-foreground: 23 23 23;
+      --card: 23 23 23;
+      --secondary: 38 38 38;
+      --secondary-foreground: 250 250 250;
+      --background: 10 10 10;
+      --popover: 23 23 23;
+      --popover-foreground: 250 250 250;
+      --muted: 38 38 38;
+      --muted-foreground: 161 161 161;
+      --destructive: 255 100 103;
+      --foreground: 250 250 250;
+      --border: 46 46 46;
+      --input: 46 46 46;
+      --accent: 38 38 38;
+      --accent-foreground: 250 250 250;
+      --ring: 115 115 115;
+
+      /* Status tokens step one shade lighter (the 400 step) so they keep
+         contrast against the near-black --background. */
+      --status-needs-action: 251 191 36;
+      --status-needs-action-foreground: 69 26 3;
+      --status-in-review: 96 165 250;
+      --status-in-review-foreground: 12 26 51;
+      --status-paid: 74 222 128;
+      --status-paid-foreground: 5 46 22;
+      --status-resolved: 156 163 175;
+      --status-resolved-foreground: 17 24 39;
+      --status-denied: 248 113 113;
+      --status-denied-foreground: 69 10 10;
+    }
+  }
+
+  :root.dark {
+    --primary: 255 245 245;
+    --primary-foreground: 23 23 23;
+    --card: 23 23 23;
+    --secondary: 38 38 38;
+    --secondary-foreground: 250 250 250;
+    --background: 10 10 10;
+    --popover: 23 23 23;
+    --popover-foreground: 250 250 250;
+    --muted: 38 38 38;
+    --muted-foreground: 161 161 161;
+    --destructive: 255 100 103;
+    --foreground: 250 250 250;
+    --border: 46 46 46;
+    --input: 46 46 46;
+    --accent: 38 38 38;
+    --accent-foreground: 250 250 250;
+    --ring: 115 115 115;
+
+    --status-needs-action: 251 191 36;
+    --status-needs-action-foreground: 69 26 3;
+    --status-in-review: 96 165 250;
+    --status-in-review-foreground: 12 26 51;
+    --status-paid: 74 222 128;
+    --status-paid-foreground: 5 46 22;
+    --status-resolved: 156 163 175;
+    --status-resolved-foreground: 17 24 39;
+    --status-denied: 248 113 113;
+    --status-denied-foreground: 69 10 10;
+  }
+
+  :root.light {
+    --primary: 23 23 23;
+    --primary-foreground: 250 250 250;
+    --card: 255 255 255;
+    --secondary: 245 245 245;
+    --secondary-foreground: 23 23 23;
+    --background: 255 255 255;
+    --popover: 255 255 255;
+    --popover-foreground: 10 10 10;
+    --muted: 245 245 245;
+    --muted-foreground: 115 115 115;
+    --destructive: 231 0 11;
+    --foreground: 10 10 10;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 212 212 212;
+    --accent: 247 247 247;
+    --accent-foreground: 52 52 52;
+
+    --status-needs-action: 245 158 11;
+    --status-needs-action-foreground: 69 26 3;
+    --status-in-review: 59 130 246;
+    --status-in-review-foreground: 255 255 255;
+    --status-paid: 34 197 94;
+    --status-paid-foreground: 255 255 255;
+    --status-resolved: 107 114 128;
+    --status-resolved-foreground: 255 255 255;
+    --status-denied: 239 68 68;
+    --status-denied-foreground: 255 255 255;
+  }
+}
+
+/* ─── Upstream gap fix ───────────────────────────────────────────────────
+   gluestack-ui v5 maps `<Text size="2xs">` to the class `text-2xs`, but
+   neither Tailwind v4 nor NativeWind defines a `--text-2xs` step. Without this
+   block the class emits no CSS and `size="2xs"` silently renders at the
+   inherited size — indistinguishable from `size="md"` — while the component's
+   TypeScript still advertises "2xs" as a valid value.
+
+   0.625rem / 0.875rem continues the scale below `xs` (0.75rem / 1rem). Adjust
+   if the TDC type scale says otherwise, but do not delete: seven component
+   files reference this class. See docs/ASSUMPTIONS.md.
+   --------------------------------------------------------------------- */
+@theme {
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: 0.875rem;
+}
+
+@theme inline {
+  --color-primary: rgb(var(--primary));
+  --color-primary-foreground: rgb(var(--primary-foreground));
+  --color-card: rgb(var(--card));
+  --color-secondary: rgb(var(--secondary));
+  --color-secondary-foreground: rgb(var(--secondary-foreground));
+  --color-background: rgb(var(--background));
+  --color-popover: rgb(var(--popover));
+  --color-popover-foreground: rgb(var(--popover-foreground));
+  --color-muted: rgb(var(--muted));
+  --color-muted-foreground: rgb(var(--muted-foreground));
+  --color-destructive: rgb(var(--destructive));
+  --color-foreground: rgb(var(--foreground));
+  --color-border: rgb(var(--border));
+  --color-input: rgb(var(--input));
+  --color-ring: rgb(var(--ring));
+  --color-accent: rgb(var(--accent));
+  --color-accent-foreground: rgb(var(--accent-foreground));
+
+  /* Exposes bg-status-*, text-status-* and border-status-* utilities. */
+  --color-status-needs-action: rgb(var(--status-needs-action));
+  --color-status-needs-action-foreground: rgb(var(--status-needs-action-foreground));
+  --color-status-in-review: rgb(var(--status-in-review));
+  --color-status-in-review-foreground: rgb(var(--status-in-review-foreground));
+  --color-status-paid: rgb(var(--status-paid));
+  --color-status-paid-foreground: rgb(var(--status-paid-foreground));
+  --color-status-resolved: rgb(var(--status-resolved));
+  --color-status-resolved-foreground: rgb(var(--status-resolved-foreground));
+  --color-status-denied: rgb(var(--status-denied));
+  --color-status-denied-foreground: rgb(var(--status-denied-foreground));
+}

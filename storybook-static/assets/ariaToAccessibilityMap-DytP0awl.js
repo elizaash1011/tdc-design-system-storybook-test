@@ -1,0 +1,1 @@
+import{n as e,s as t}from"./rolldown-runtime-BcKkbAw3.js";import{t as n}from"./react-DwpFz0gP.js";var r;function i(){return(i=e((()=>{n(),r=e=>{let t=Object.assign({},e);for(let n in e)n.indexOf(`data-`)>-1&&(t.dataSet||={},t.dataSet[n.split(`data-`)[1]]=e[n]);return t}})))()}export{r as n,i as t};

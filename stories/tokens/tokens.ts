@@ -1,0 +1,178 @@
+/**
+ * The authoritative list of theme tokens, mirroring `global.css`.
+ *
+ * `docs/TOKENS.md` and the Tokens stories both describe this same set, so when
+ * a token is added to `global.css` it must be added here too or it silently
+ * stops appearing in the gallery.
+ *
+ * `cssVar` is the raw variable (`--primary`). `utility` is the Tailwind class
+ * stem exposed via `@theme inline` (`primary`, usable as `bg-primary`).
+ * The Figma variable name is intentionally the same string as `cssVar` minus
+ * the leading dashes — see docs/TOKENS.md.
+ */
+
+export type TokenGroup = {
+  group: string;
+  description: string;
+  tokens: { cssVar: string; utility: string; purpose: string }[];
+};
+
+export const COLOR_TOKENS: TokenGroup[] = [
+  {
+    group: 'Surface',
+    description: 'Page and container backgrounds, and the text that sits on them.',
+    tokens: [
+      { cssVar: '--background', utility: 'background', purpose: 'App/page background' },
+      { cssVar: '--foreground', utility: 'foreground', purpose: 'Default body text' },
+      { cssVar: '--card', utility: 'card', purpose: 'Raised card surface' },
+      { cssVar: '--popover', utility: 'popover', purpose: 'Floating surface (menu, popover)' },
+      {
+        cssVar: '--popover-foreground',
+        utility: 'popover-foreground',
+        purpose: 'Text on a floating surface',
+      },
+    ],
+  },
+  {
+    group: 'Brand',
+    description:
+      'Primary and secondary actions. These are the first two to replace with TDC brand values.',
+    tokens: [
+      { cssVar: '--primary', utility: 'primary', purpose: 'Primary action fill' },
+      {
+        cssVar: '--primary-foreground',
+        utility: 'primary-foreground',
+        purpose: 'Label on a primary fill',
+      },
+      { cssVar: '--secondary', utility: 'secondary', purpose: 'Secondary action fill' },
+      {
+        cssVar: '--secondary-foreground',
+        utility: 'secondary-foreground',
+        purpose: 'Label on a secondary fill',
+      },
+    ],
+  },
+  {
+    group: 'Muted & accent',
+    description: 'De-emphasised surfaces and hover states.',
+    tokens: [
+      { cssVar: '--muted', utility: 'muted', purpose: 'Subdued surface' },
+      {
+        cssVar: '--muted-foreground',
+        utility: 'muted-foreground',
+        purpose: 'Secondary / helper text',
+      },
+      { cssVar: '--accent', utility: 'accent', purpose: 'Hover / active surface' },
+      {
+        cssVar: '--accent-foreground',
+        utility: 'accent-foreground',
+        purpose: 'Text on an accent surface',
+      },
+    ],
+  },
+  {
+    group: 'Feedback',
+    description: 'Destructive actions and error states.',
+    tokens: [
+      {
+        cssVar: '--destructive',
+        utility: 'destructive',
+        purpose: 'Destructive action, error border',
+      },
+    ],
+  },
+  {
+    group: 'Border & form',
+    description: 'Outlines, dividers, and focus rings.',
+    tokens: [
+      { cssVar: '--border', utility: 'border', purpose: 'Divider / container outline' },
+      { cssVar: '--input', utility: 'input', purpose: 'Form field border' },
+      { cssVar: '--ring', utility: 'ring', purpose: 'Focus ring' },
+    ],
+  },
+  {
+    group: 'Status (TDC addition)',
+    description:
+      'Claim and transaction status. Not part of stock gluestack — added so status is one named token rather than a color chosen per screen.',
+    tokens: [
+      {
+        cssVar: '--status-needs-action',
+        utility: 'status-needs-action',
+        purpose: 'Action required from the member (amber family)',
+      },
+      {
+        cssVar: '--status-needs-action-foreground',
+        utility: 'status-needs-action-foreground',
+        purpose: 'Label on needs-action',
+      },
+      {
+        cssVar: '--status-in-review',
+        utility: 'status-in-review',
+        purpose: 'Received, being adjudicated (blue family)',
+      },
+      {
+        cssVar: '--status-in-review-foreground',
+        utility: 'status-in-review-foreground',
+        purpose: 'Label on in-review',
+      },
+      {
+        cssVar: '--status-paid',
+        utility: 'status-paid',
+        purpose: 'Reimbursed or settled (green family)',
+      },
+      {
+        cssVar: '--status-paid-foreground',
+        utility: 'status-paid-foreground',
+        purpose: 'Label on paid',
+      },
+      {
+        cssVar: '--status-resolved',
+        utility: 'status-resolved',
+        purpose: 'Closed, no action left (gray family)',
+      },
+      {
+        cssVar: '--status-resolved-foreground',
+        utility: 'status-resolved-foreground',
+        purpose: 'Label on resolved',
+      },
+      {
+        cssVar: '--status-denied',
+        utility: 'status-denied',
+        purpose: 'Claim denied (red family)',
+      },
+      {
+        cssVar: '--status-denied-foreground',
+        utility: 'status-denied-foreground',
+        purpose: 'Label on denied',
+      },
+    ],
+  },
+];
+
+/** Text `size` values exposed by `components/ui/text`. */
+export const TEXT_SIZES = [
+  '2xs',
+  'xs',
+  'sm',
+  'md',
+  'lg',
+  'xl',
+  '2xl',
+  '3xl',
+  '4xl',
+  '5xl',
+  '6xl',
+] as const;
+
+/** Heading `size` values exposed by `components/ui/heading`. */
+export const HEADING_SIZES = [
+  'xs',
+  'sm',
+  'md',
+  'lg',
+  'xl',
+  '2xl',
+  '3xl',
+  '4xl',
+  '5xl',
+] as const;

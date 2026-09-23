@@ -1,0 +1,27 @@
+import{n as e,s as t}from"./rolldown-runtime-BcKkbAw3.js";import{t as n}from"./react-DwpFz0gP.js";import{a as r,i,n as a,r as o,t as s}from"./menu-BDsNB8fK.js";import{t as c}from"./jsx-runtime-BbDfbRii.js";import{a as l,i as u,t as d}from"./button-BmNQOk4E.js";import{C as f,N as p,T as m,rt as h,tt as g}from"./index.web-CrrZZXjP.js";import{a as _,i as v,n as y,t as b}from"./helpers-C3hOae0F.js";import{n as x,t as S}from"./index.web-BkgxHkvM.js";function C({initialOpen:e=!1,placement:t=`bottom left`}){let[n,r]=D.useState(e);return(0,O.jsx)(S,{className:`h-64 w-full items-center justify-center`,children:(0,O.jsx)(s,{isOpen:n,onOpen:()=>r(!0),onClose:()=>r(!1),placement:t,trigger:e=>(0,O.jsx)(d,{variant:`outline`,...e,children:(0,O.jsx)(u,{children:`Open menu`})}),children:A.map(e=>(0,O.jsx)(a,{textValue:e,children:(0,O.jsx)(o,{children:e})},e))})})}function w(){let[e,t]=D.useState(`bottom left`),[n,r]=D.useState(!1);return(0,O.jsxs)(O.Fragment,{children:[(0,O.jsx)(v,{className:`mb-4`,children:k.map(e=>(0,O.jsx)(b,{label:e,children:(0,O.jsx)(d,{size:`sm`,variant:`outline`,onPress:()=>{t(e),r(!0)},children:(0,O.jsxs)(u,{children:[`Show `,e]})})},e))}),(0,O.jsx)(S,{className:`h-64 w-full items-center justify-center rounded-md border border-border bg-muted`,children:(0,O.jsxs)(s,{isOpen:n,onOpen:()=>r(!0),onClose:()=>r(!1),placement:e,trigger:e=>(0,O.jsx)(d,{...e,children:(0,O.jsx)(u,{children:`Anchor`})}),children:[(0,O.jsx)(a,{textValue:e,children:(0,O.jsxs)(o,{children:[`placement=`,e]})},`placement`),A.map(e=>(0,O.jsx)(a,{textValue:e,children:(0,O.jsx)(o,{children:e})},e))]})})]})}function T(){let[e,t]=D.useState(!0);return(0,O.jsx)(S,{className:`h-72 w-full items-center justify-center`,children:(0,O.jsxs)(s,{isOpen:e,onOpen:()=>t(!0),onClose:()=>t(!1),placement:`bottom left`,disabledKeys:[`Delete`],trigger:e=>(0,O.jsx)(d,{variant:`outline`,...e,children:(0,O.jsx)(u,{children:`Open menu`})}),children:[j.map(e=>(0,O.jsxs)(a,{textValue:e.label,children:[(0,O.jsx)(p,{as:e.icon,size:`sm`,className:`mr-2 text-popover-foreground`}),(0,O.jsx)(o,{children:e.label})]},e.label)),(0,O.jsx)(i,{}),(0,O.jsxs)(a,{textValue:`Delete`,children:[(0,O.jsx)(p,{as:g,size:`sm`,className:`mr-2 text-popover-foreground`}),(0,O.jsx)(o,{children:`Delete (disabled)`})]},`Delete`)]})})}function E(){let[e,t]=D.useState(!0);return(0,O.jsx)(S,{className:`h-80 w-full items-center justify-center`,children:(0,O.jsx)(s,{isOpen:e,onOpen:()=>t(!0),onClose:()=>t(!1),placement:`bottom left`,trigger:e=>(0,O.jsx)(d,{variant:`outline`,...e,children:(0,O.jsx)(u,{children:`Open menu`})}),children:Array.from({length:12},(e,t)=>`Item ${t+1}`).map(e=>(0,O.jsx)(a,{textValue:e,children:(0,O.jsx)(o,{children:e})},e))})})}var D,O,k,A,j,M,N,P,F,I,L,R;function z(){return(z=e((()=>{D=t(n()),x(),l(),h(),r(),_(),O=c(),k=[`top`,`top left`,`top right`,`bottom`,`bottom left`,`bottom right`,`left`,`left top`,`left bottom`,`right`,`right top`,`right bottom`],A=[`Item one`,`Item two`,`Item three`],j=[{label:`Edit`,icon:m},{label:`Duplicate`,icon:f}],M={title:`UI/Menu`,component:C},N={},P={render:()=>(0,O.jsx)(C,{initialOpen:!0})},F={render:()=>(0,O.jsxs)(O.Fragment,{children:[(0,O.jsx)(y,{children:"Only one menu can be open at a time, so each button repositions the single anchored menu below. `shouldFlip` is on by default, so a placement with no room flips to the opposite side."}),(0,O.jsx)(w,{})]})},I={render:()=>(0,O.jsxs)(O.Fragment,{children:[(0,O.jsx)(y,{children:"Items keyed in `disabledKeys` render at 40% opacity and ignore presses."}),(0,O.jsx)(T,{})]})},L={render:()=>(0,O.jsxs)(O.Fragment,{children:[(0,O.jsx)(y,{children:`The menu caps its height at 300px and scrolls beyond that. Items are the icon-free default shape.`}),(0,O.jsx)(E,{})]})},R=[`Default`,`Open`,`Placements`,`WithIconsAndSeparator`,`Scrollable`],N.parameters={...N.parameters,docs:{...N.parameters?.docs,source:{originalSource:`{}`,...N.parameters?.docs?.source}}},P.parameters={...P.parameters,docs:{...P.parameters?.docs,source:{originalSource:`{
+  render: () => <MenuExample initialOpen />
+}`,...P.parameters?.docs?.source}}},F.parameters={...F.parameters,docs:{...F.parameters?.docs,source:{originalSource:`{
+  render: () => <>
+      <Note>
+        Only one menu can be open at a time, so each button repositions the
+        single anchored menu below. \`shouldFlip\` is on by default, so a
+        placement with no room flips to the opposite side.
+      </Note>
+      <MenuPlacementExample />
+    </>
+}`,...F.parameters?.docs?.source}}},I.parameters={...I.parameters,docs:{...I.parameters?.docs,source:{originalSource:`{
+  render: () => <>
+      <Note>
+        Items keyed in \`disabledKeys\` render at 40% opacity and ignore presses.
+      </Note>
+      <MenuCompositionExample />
+    </>
+}`,...I.parameters?.docs?.source}}},L.parameters={...L.parameters,docs:{...L.parameters?.docs,source:{originalSource:`{
+  render: () => <>
+      <Note>
+        The menu caps its height at 300px and scrolls beyond that. Items are the
+        icon-free default shape.
+      </Note>
+      <MenuScrollableExample />
+    </>
+}`,...L.parameters?.docs?.source}}}})))()}z();export{N as Default,P as Open,F as Placements,L as Scrollable,I as WithIconsAndSeparator,R as __namedExportsOrder,M as default};
